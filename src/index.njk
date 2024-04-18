@@ -1,8 +1,21 @@
 {% extends '_templates/base.njk' %}
 
 {% block page_title %}Home{% endblock %}
+
+{% block page_description %}A collection of information on the band Queen{% endblock %}
+
 {% block content %}
 <div class="container">
-  <p>Content goes here</p>
+  <h1>Original Members</h1>
+  <p>Meet the four original members of Queen<p>
+  {% for member in queen.members %}
+    <h3><a href="members/{{ member.slug }}.html" target="_blank">
+    {{ member.name }}</a></h3>
+    <p>{{ member.instruments }}</p>
+    <hr>
+  {% endfor %}
+
+  <h1>Discography</h1>
+  <p>See all 15 studio albums by Queen <a href="discography.html" target="_blank">here</a>.
 </div>
 {% endblock %}
