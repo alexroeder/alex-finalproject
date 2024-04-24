@@ -2,9 +2,13 @@
   background: url(../img/img-queen/queen-band-wallpaper.jpg) no-repeat center;
   background-size: cover;
   color: white;
-  padding-top: 12rem
-}
-
-#jumbo {
+  padding-top: 12rem;
+  opacity: 0.75;
   margin-bottom: 30px;
+  
+  h1{
+    font-family: "Sedan";
+    font-size: 8rem;
+    color: red;
+  }
 }

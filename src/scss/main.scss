@@ -22,6 +22,45 @@
 @import 'nav';
 
 @import "jumbotron";
+
+h4 {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
 h3 {
   font-size: 1.5rem;
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a {
+  color: red;
+}
+
+.members {
+  background-color: lightgray;
+  padding: 2rem;
+  margin-bottom: 30px;
+}
+
+.discs {
+  background-color: lightgray;
+  padding: 2rem;
+  margin-bottom: 30px;
+}
+
+.chart {
+  background-color: lightgray;
+  padding: 2rem;
+  margin-bottom: 30px;
 }

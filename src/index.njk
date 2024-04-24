@@ -6,16 +6,38 @@
 
 {% block content %}
 <div class="container">
-  <h1>Original Members</h1>
-  <p>Meet the four original members of Queen<p>
-  {% for member in queen.members %}
-    <h3><a href="members/{{ member.slug }}.html" target="_blank">
-    {{ member.name }}</a></h3>
-    <p>{{ member.instruments }}</p>
-    <hr>
-  {% endfor %}
+  <div class="members row">
+    <div class="col-lg-6">
+      <img src="../img/img-queen/queen-band-early.jpg" alt="Queen on Stage" class="img-fluid">
+    </div>
+    <div class="col-sm-6">
+      <h1>Original Members</h1>
+      <p>Meet the four original members of Queen<p>
+      {% for member in queen.members %}
+        <h3><a href="members/{{ member.slug }}.html">
+        {{ member.name }}</a></h3>
+          <p>{{ member.instruments }}</p>
+          <hr>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="discs row">
+    <div class="col-lg-6">
+      <img src="../img/img-queen/queen-live-on-stage.jpg" alt="Queen on Stage" class="img-fluid">
+    </div>
+    <div class="col-lg-6">
+      <h1>Discography</h1>
+      <p>See all 15 studio albums by Queen <a href="discography.html">here</a>.
+    </div>
+  </div>
+  <div class="chart row">
+    <div class="col-lg-10 offset-lg-1">
+      <iframe title="&quot;Bohemian Rhapsody&quot; spends 44 weeks on the Billboard Hot 100." aria-label="Column Chart" id="datawrapper-chart-fGeId" src="https://datawrapper.dwcdn.net/fGeId/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="635" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+      </script>
+    </div>
+  </div>
 
-  <h1>Discography</h1>
-  <p>See all 15 studio albums by Queen <a href="discography.html" target="_blank">here</a>.
 </div>
+
+
 {% endblock %}
