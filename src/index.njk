@@ -30,13 +30,37 @@
       <p>See all 15 studio albums by Queen <a href="discography.html">here</a>.
     </div>
   </div>
-  <div class="chart row">
-    <div class="col-lg-10 offset-lg-1">
+  <div class="chart">
+      <h1>Queen in the Charts</h1>
       <iframe title="&quot;Bohemian Rhapsody&quot; spends 44 weeks on the Billboard Hot 100." aria-label="Column Chart" id="datawrapper-chart-fGeId" src="https://datawrapper.dwcdn.net/fGeId/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="635" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
       </script>
-    </div>
   </div>
-
+  <div class="table">
+    <h1>Tour Dates</h2>
+    <p>Find where and when Queen has performed recently</p>
+      <div class="container">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>Country</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          {% for tour in queen.tour  %}
+          <tbody>
+            <tr>
+              <td>{{ tour.date }}</td>
+              <td>{{ tour.city }}</td>
+              <td>{{ tour.country }}</td>
+              <td>{{ tour.venue }}</td>
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
+  </div>
 </div>
 
 
